@@ -1,0 +1,22 @@
+1 - O que é o Javascript
+Javascript é a linguagem da internet
+
+2 - Variáveis
+variaves são usadas para armazenar dados
+ECMAscript - padronização da linguagem
+var - escopo global, pode ser atualizada/atribuida, pode ser hospedado
+let - escopo bloqueado, pode ser atualizada,
+const - escopo bloqueado, precisa ser inicializada
+
+3 - Tipos de dados
+linguegm dinamicamente tipada, os dados podem ser alterados conforme necessidade do algortimo
+tipo de dado: string, number, float, boolean, null
+Objeto (mapeamento entre chaves e valores).. chave é string e valor pode ser qualquer tipo	
+Array => conj de informações 
+Function => objeto que tem capacidade de ser chamado e executado
+
+4 - Operadores 
+operadores aritiméticos +-*/%
+operadores de atribuição // console.log(x+=y); // igual a x = x + y
+operadores de comparaçã // ==, >=, <
+operadores de comparação // &&, ||, !
