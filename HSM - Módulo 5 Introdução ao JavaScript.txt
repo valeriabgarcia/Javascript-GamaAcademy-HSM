@@ -20,3 +20,25 @@ operadores aritiméticos +-*/%
 operadores de atribuição // console.log(x+=y); // igual a x = x + y
 operadores de comparaçã // ==, >=, <
 operadores de comparação // &&, ||, !
+
+5 - Condicionais
+if/else
+case / break
+
+6 - Estruturas de rpetição
+for
+while
+do/while
+
+7 - Funções
+function exemplo(parametro1, parametro2) {
+	...
+}
+exemplo(argumento1, argumento2)
+
+8 - Classes
+Classe
+Herança
+Encapsulamento
+
+9 - Exercicios

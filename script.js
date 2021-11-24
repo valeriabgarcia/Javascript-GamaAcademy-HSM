@@ -65,4 +65,127 @@ console.log(x%=y);
 // OPERADORES LÓGICOS
 // &&, ||, !
 
+// ******************************************************************
+// VARIÁVEIS 
+var num = 1;
+num = 5;
+
+if (num == 1 ) {
+    console.log("num é igual a 1");
+} else if (num == 2) {
+    console.log("num é igual a 2");
+} else {
+    console.log("num é igual a 5");
+}
+
+var mes = "Janeiro";
+
+switch (mes) {
+    case "Fevereiro":
+        console.log("mês 2");
+        break;
+    case "Março":
+        console.log("mês 3");
+        break;
+    case "Janeiro":
+        console.log("mês 1");
+        break;
+    default:
+        console.log("nenhum dos casos foi atendidos");
+}
+
+
+// ******************************************************************
+// ESTRUTURAS DE REPETIÇÃO
+var colors = ['black', 'red', 'blue', 'green'];
+
+for (var i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+}
+
+for (var i = 0; i <= 3; i++) {
+    console.log(i);
+}
+
+
+var a = 0;
+while  (a < 10) {
+    console.log(a);
+    a++;
+}
+
+var b = 0;
+do {
+    console.log(b);
+    b++;
+} while (b <= 5);
+
+
+// ******************************************************************
+// FUNÇÕES
+function sayHello(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
+sayHello('Valeria', 'Garcia');
+
+function sum(a, b) {
+    return a + b;
+}
+console.log('A soma de a + b é ' + sum(5, 3));
+
+
+// ******************************************************************
+// CLASSES
+class Book {
+    constructor(title, author, pages) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }  
+
+    read() {
+        return `Estou lendo ${this.title}`
+    }
+}
+
+//Herança
+class ITBook extends Book {
+    constructor(title, author, pages, technology) {
+        super(title, author, pages);
+        this.technology = technology;
+    }
+}
+
+let book = new Book('Algoritimos Para Viver', 'Brian', 500);
+let otherBook = new Book('Outro Livro', 'Joao', 100);
+let itBook = new ITBook('Livro de Tecnologia', 'Ana', 300, "Algoritimos");
+
+console.log(book);
+console.log(otherBook.read());
+console.log(itBook);
+
+//Encapsulamento 
+class Person {
+    constructor(name) {
+        this._name = name;
+    }
+
+    get name () {
+        return this._name;
+    }
+
+    set name(value) {
+        this._name = value;
+    }
+}
+
+let person2 = new Person('Valeria');
+person2.name = "Valentina";
+console.log(person2.name);
+
+
+
+
+
+
 
